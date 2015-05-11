@@ -14,6 +14,9 @@
 		B22D90B01AFC994D0072716C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B22D90AF1AFC994D0072716C /* Images.xcassets */; };
 		B22D90B31AFC994D0072716C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B22D90B11AFC994D0072716C /* LaunchScreen.xib */; };
 		B22D90BF1AFC994D0072716C /* SJParallaxHeardViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D90BE1AFC994D0072716C /* SJParallaxHeardViewTests.m */; };
+		B22D90CE1AFC9A540072716C /* SJParalaxHeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = B22D90CD1AFC9A540072716C /* SJParalaxHeardView.m */; };
+		B22D90D21AFC9D760072716C /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22D90D01AFC9D760072716C /* bg.jpg */; };
+		B22D90D31AFC9D760072716C /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B22D90D11AFC9D760072716C /* logo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		B22D90B81AFC994D0072716C /* SJParallaxHeardViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJParallaxHeardViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22D90BD1AFC994D0072716C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B22D90BE1AFC994D0072716C /* SJParallaxHeardViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJParallaxHeardViewTests.m; sourceTree = "<group>"; };
+		B22D90CC1AFC9A540072716C /* SJParalaxHeardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJParalaxHeardView.h; sourceTree = "<group>"; };
+		B22D90CD1AFC9A540072716C /* SJParalaxHeardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJParalaxHeardView.m; sourceTree = "<group>"; };
+		B22D90D01AFC9D760072716C /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		B22D90D11AFC9D760072716C /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,7 @@
 		B22D90A11AFC994D0072716C /* SJParallaxHeardView */ = {
 			isa = PBXGroup;
 			children = (
+				B22D90CB1AFC9A540072716C /* HeardView */,
 				B22D90A61AFC994D0072716C /* AppDelegate.h */,
 				B22D90A71AFC994D0072716C /* AppDelegate.m */,
 				B22D90A91AFC994D0072716C /* ViewController.h */,
@@ -96,6 +104,7 @@
 		B22D90A21AFC994D0072716C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B22D90CF1AFC9D760072716C /* Resource */,
 				B22D90A31AFC994D0072716C /* Info.plist */,
 				B22D90A41AFC994D0072716C /* main.m */,
 			);
@@ -117,6 +126,24 @@
 				B22D90BD1AFC994D0072716C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B22D90CB1AFC9A540072716C /* HeardView */ = {
+			isa = PBXGroup;
+			children = (
+				B22D90CC1AFC9A540072716C /* SJParalaxHeardView.h */,
+				B22D90CD1AFC9A540072716C /* SJParalaxHeardView.m */,
+			);
+			path = HeardView;
+			sourceTree = "<group>";
+		};
+		B22D90CF1AFC9D760072716C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B22D90D01AFC9D760072716C /* bg.jpg */,
+				B22D90D11AFC9D760072716C /* logo.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B22D90AE1AFC994D0072716C /* Main.storyboard in Resources */,
+				B22D90D31AFC9D760072716C /* logo.jpg in Resources */,
 				B22D90B31AFC994D0072716C /* LaunchScreen.xib in Resources */,
+				B22D90D21AFC9D760072716C /* bg.jpg in Resources */,
 				B22D90B01AFC994D0072716C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22D90CE1AFC9A540072716C /* SJParalaxHeardView.m in Sources */,
 				B22D90AB1AFC994D0072716C /* ViewController.m in Sources */,
 				B22D90A81AFC994D0072716C /* AppDelegate.m in Sources */,
 				B22D90A51AFC994D0072716C /* main.m in Sources */,

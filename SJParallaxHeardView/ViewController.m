@@ -7,21 +7,50 @@
 //
 
 #import "ViewController.h"
+#import "SJParalaxHeardView.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
+@property (strong, nonatomic) UITableView *tableView;
+@property (nonatomic, weak) SJParalaxHeardView *headerView;
 
 @end
+
+
+
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+    [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ViewController"];
+    [self.view addSubview:_tableView];
+    
+    SJParalaxHeardView *headerView = [[SJParalaxHeardView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200) backgroundImage:@"bg.jpg" logoImage:@"logo.jpg" title:@"Rock Never Die" subTitle:@"I Am Soldier"];
+    headerView.viewController = self;
+    headerView.scrollView = self.tableView;
+    [self.view addSubview:headerView];
+    _headerView = headerView;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 28;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ViewController" forIndexPath:indexPath];
+    
+    [cell.textLabel setText:@"Make some noise"];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
