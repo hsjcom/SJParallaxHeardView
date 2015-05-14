@@ -34,7 +34,6 @@
     headerView.viewController = self;
     headerView.scrollView = self.tableView;
     [self.view addSubview:headerView];
-    _headerView = headerView;
 }
 
 #pragma mark - UITableViewDataSource
