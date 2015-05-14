@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>844EEE64-5D5C-4A77-BADC-747165DD3061</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SJParallaxHeardView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D1CCCA8E49C35D6838A3F4B8067DCBAF7AB02631</key>
+		<string>https://github.com/hsjcom/SJParallaxHeardView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SJParallaxHeardView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D1CCCA8E49C35D6838A3F4B8067DCBAF7AB02631</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hsjcom/SJParallaxHeardView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D1CCCA8E49C35D6838A3F4B8067DCBAF7AB02631</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D1CCCA8E49C35D6838A3F4B8067DCBAF7AB02631</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SJParallaxHeardView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
